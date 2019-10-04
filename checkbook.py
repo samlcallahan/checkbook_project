@@ -100,7 +100,7 @@ def amount_input(prompt_message="New amount?"):
     while not (amount[0] == "-" and amount[1:].isnumeric()) and not amount.isnumeric():
         print("Invalid amount: " + amount + "\n")
         amount = input(prompt_message)
-    amount = int(amount)
+    amount = float(amount)
     return amount
 
 def curr_code_input():
